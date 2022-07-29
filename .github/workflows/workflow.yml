@@ -18,4 +18,4 @@ jobs:
         run: npm install
 
       - name: Teste da aplicação
-        run: test
+        run: npm run test
