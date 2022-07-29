@@ -2,7 +2,7 @@ name: Frontend CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
   build:
@@ -15,7 +15,7 @@ jobs:
       # Para aplicações com Node, veja:
       # https://github.com/actions/setup-node
       - name: Build da aplicação
-        run: <comando>
+        run: npm install
 
       - name: Teste da aplicação
-        run: <comando>
+        run: jest
